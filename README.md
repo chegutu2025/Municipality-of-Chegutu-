@@ -30,3 +30,4 @@ Here are tutorial videos from my YouTube channel:
 [How to make a choropleth map](https://youtu.be/FebVhINeCQE)
 
 [How to create a web map](https://youtu.be/JEzKWHdi49o)
+![logo](https://github.com/user-attachments/assets/84d425ca-dbc3-4a6a-ba15-ad186c535a70)
