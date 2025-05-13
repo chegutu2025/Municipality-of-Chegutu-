@@ -4,12 +4,12 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [3338239.864967, -2063934.328951, 3374152.521057, -2041366.266381], maxZoom: 28, minZoom: 1
+        extent: [3345793.137159, -2059063.716001, 3367297.955749, -2044895.045517], maxZoom: 28, minZoom: 1
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([3338239.864967, -2063934.328951, 3374152.521057, -2041366.266381], map.getSize());
+map.getView().fit([3345793.137159, -2059063.716001, 3367297.955749, -2044895.045517], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -921,22 +921,12 @@ if (elementToMove && parentElement) {
 
 //geocoder
 
-var geocoder = new Geocoder('nominatim', {
-  provider: 'osm',
-  lang: 'en-US',
-  placeholder: 'Search place or address ...',
-  limit: 5,
-  keepOpen: true,
-});
-map.addControl(geocoder);
-document.getElementsByClassName('gcd-gl-btn')[0].className += ' fa fa-search';
-
 
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_wards_1,
-    colName: 'Ward',
+    layer: lyr_PublicBuildings_3,
+    colName: 'Name',
     zoom: 10,
     collapsed: true,
     map: map
